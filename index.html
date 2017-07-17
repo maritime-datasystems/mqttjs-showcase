@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>test Ws mqtt.js</title>
+</head>
+<body>
+<p>For an explanation what is going on here, look at <a href="https://www.npmjs.com/package/mqtt#webpack">https://www.npmjs.com/package/mqtt#webpack</a>.</p>
+<script src="./browserMqtt.js"></script>
+<script>
+  var client = mqtt.connect("ws://localhost:9001") // you add a ws:// url here
+  client.subscribe("my_topic")
+ 
+  client.on("message", function (topic, payload) {
+    console.log([topic, payload].join(": "))
+    alert([topic, payload].join(": "))
+  })
+ 
+  client.publish("mqtt/demo", "hello world!")
+</script> 
+</body>
+</html>

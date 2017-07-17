@@ -1,0 +1,16 @@
+{
+  "name": "mqtt-demo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "mqtt": "^2.9.1",
+    "webpack": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
